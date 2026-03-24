@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form HTML5</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container mt-4">
+        <form class="row g-3">
+
+            <div class="col-12">
+                <h5>Payment for example</h5>
+                <p class="text-danger">Some fields are missing</p> 
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputCard" class="form-label">Card #</label>
+                <input type="text" class="form-control" id="inputCard" placeholder="XXXX XXXX XXXX XXXX">
+            </div>
+
+            <div class="col-md-2">
+                <label for="inputCVC" class="form-label">CVC #</label>
+                <input type="password" class="form-control" id="inputCVC" placeholder="123">
+            </div>
+
+            <div class="col-md-4">
+                <label for="inputAmount" class="form-label">Amount</label>
+                <input type="text" class="form-control" id="inputAmount" placeholder="Amount">
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputFname" class="form-label">First name</label>
+                <input type="text" class="form-control" id="inputFname">
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputLname" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="inputLname">
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                    <option selected disabled>Pick a State</option>
+                    <option>España</option>
+                    <option>Perú</option>
+                    <option>Argentina</option>
+                </select>
+            </div>
+
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Postal code</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+
+            <div class="col-md-6">
+                <div class="bg-light p-3 rounded">
+                    <label class="form-label">We accept</label>
+
+                    <div class="d-flex gap-4 fs-2 text-secondary">
+
+                        <label class="d-flex align-items-center gap-2">
+                            <input class="form-check-input" type="radio" name="cardType" value="visa">
+                            <i class="fab fa-cc-visa"></i>
+                        </label>
+
+                        <label class="d-flex align-items-center gap-2">
+                            <input class="form-check-input" type="radio" name="cardType" value="mastercard">
+                            <i class="fab fa-cc-mastercard"></i>
+                        </label>
+
+                        <label class="d-flex align-items-center gap-2">
+                            <input class="form-check-input" type="radio" name="cardType" value="amex">
+                            <i class="fab fa-cc-amex"></i>
+                        </label>
+
+                        <label class="d-flex align-items-center gap-2">
+                            <input class="form-check-input" type="radio" name="cardType" value="discover">
+                            <i class="fab fa-cc-discover"></i>
+                        </label>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputMessage" class="form-label">Message</label>
+                <textarea class="form-control" id="inputMessage" rows="4"></textarea>
+            </div>
+
+            <div class="col-12 d-flex justify-content-end gap-2">
+                <button type="button" class="btn btn-secondary">Cancel</button>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>

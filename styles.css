@@ -1,0 +1,81 @@
+body {
+    background-color: #f8f9fa;
+}
+
+h5 {
+    font-weight: 600;
+}
+
+.text-danger {
+    background-color: #f8d7da;
+    padding: 10px;
+    border-radius: 5px;
+    color: #842029 !important;
+}
+
+.form-control,
+.form-select {
+    border-radius: 6px;
+    box-shadow: none;
+}
+
+.bg-light {
+    background-color: #e9ecef !important;
+}
+
+.bg-light label {
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.form-check-input {
+    display: none;
+}
+
+.bg-light i {
+    font-size: 32px;
+    color: #6c757d;
+    transition: 0.2s;
+}
+
+.bg-light label:hover {
+    background-color: #dee2e6;
+}
+
+.form-check-input:checked + i {
+    color: #0d6efd;
+    transform: scale(1.2);
+}
+
+.form-check-input:checked {
+    display: inline-block;
+}
+
+.form-check-input:checked + i {
+    background-color: rgba(13, 110, 253, 0.1);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.btn {
+    border-radius: 6px;
+    padding: 8px 20px;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
